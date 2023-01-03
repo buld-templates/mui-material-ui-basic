@@ -1,6 +1,7 @@
 import createEmotionCache from "../utils/createEmotionCache";
 import { CacheProvider, EmotionCache } from "@emotion/react";
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "../utils/theme";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
@@ -18,8 +19,10 @@ const MyApp = (props: Props) => {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <CssBaseline />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </CacheProvider>
   );
 };
