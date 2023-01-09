@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Typography variant="h1">Hello from template</Typography>
@@ -10,3 +10,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
