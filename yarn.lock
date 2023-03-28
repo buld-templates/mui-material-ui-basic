@@ -68,6 +68,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@buld/storage@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "@buld/storage@npm:0.14.0"
+  dependencies:
+    "@emotion/react": ^11.10.5
+    "@emotion/styled": ^11.10.5
+    "@mui/material": ^5.11.3
+  checksum: 6220e7ad309c5630a6c785e91cf59f5485d8d924a71b4f7a6444caaa41bd07c7a12daf8a44ee05c6226c8c429297bd79ab5488e5d764383351c218e089523563
+  languageName: node
+  linkType: hard
+
 "@emotion/babel-plugin@npm:^11.10.6":
   version: 11.10.6
   resolution: "@emotion/babel-plugin@npm:11.10.6"
@@ -2493,6 +2504,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mui-material-template@workspace:."
   dependencies:
+    "@buld/storage": ^0.14.0
     "@emotion/react": ^11.10.5
     "@emotion/server": ^11.10.0
     "@emotion/styled": ^11.10.5

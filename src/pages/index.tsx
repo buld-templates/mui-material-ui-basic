@@ -19,6 +19,7 @@ import {
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
 import Link from "next/link";
+import { List, Upload } from "@buld/storage";
 
 const Home: NextPage = () => {
   return (
