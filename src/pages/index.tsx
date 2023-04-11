@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import {
   Box,
   Button,
@@ -15,12 +14,30 @@ import {
   Container,
   Paper,
   Stack,
+  Link,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  AppBar,
+  Toolbar,
+  Breadcrumbs,
+  Card,
+  CardActions,
+  CardMedia,
+  CardContent,
+  Table,
+  TableCell,
+  TableBody,
+  TableHead,
+  TableRow,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
-import Link from "next/link";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Box>
       <Typography variant="h1">Hello from template</Typography>
