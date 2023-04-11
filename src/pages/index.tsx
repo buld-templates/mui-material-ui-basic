@@ -36,6 +36,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
+import NextLink from "next/link";
 
 const Home = () => {
   return (
