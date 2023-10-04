@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import {
   Box,
   Button,
@@ -39,7 +38,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Image from "next/image";
 import NextLink from "next/link";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Container sx={{ marginTop: '5rem' }}>
       <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
