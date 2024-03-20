@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@buld/storage": "^0.23.0",
+    "@buld/mui": "0.6.3",
     "@emotion/cache": "^11.11.0",
     "@mui/material": "^5.15.14",
     "@mui/material-nextjs": "^5.15.11",
