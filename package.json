@@ -11,19 +11,19 @@
   "dependencies": {
     "@buld/storage": "^0.23.0",
     "@emotion/cache": "^11.11.0",
-    "@mui/material": "^5.15.0",
-    "@mui/material-nextjs": "^5.15.0",
-    "next": "14.0.4",
+    "@mui/material": "^5.15.14",
+    "@mui/material-nextjs": "^5.15.11",
+    "next": "14.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "20.10.5",
-    "@types/react": "18.2.45",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.0.4",
-    "typescript": "5.3.3"
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.67",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.1.4",
+    "typescript": "5.4.2"
   }
 }
