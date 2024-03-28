@@ -1,4 +1,4 @@
-# [Project Name]
+# Buld template - Mui/Material UI Basic
 
 This project was generated with [buld](https://buld.io), a website builder for creating Next.js applications. It's designed to get your website up and running quickly with a focus on performance and ease of use.
 
