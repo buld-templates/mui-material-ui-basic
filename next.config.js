@@ -19,21 +19,23 @@ const securityHeaders = [
   },
 ];
 
-export const reactStrictMode = true;
-export const swcMinify = true;
-export const images = {
-  remotePatterns: [
-    {
-      protocol: 'https',
-      hostname: '**',
-    },
-  ],
+module.exports = {
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+    ];
+  },
 };
-export async function headers() {
-  return [
-    {
-      source: '/:path*',
-      headers: securityHeaders,
-    },
-  ];
-}
