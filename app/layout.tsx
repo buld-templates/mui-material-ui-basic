@@ -1,9 +1,9 @@
 import * as Mui from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import theme from './theme';
 import Image from 'next/image';
 import NextLink from 'next/link';
+import theme from './theme';
+import { ThemeProvider } from '@mui/material/styles';
+import PlausibleProvider from 'next-plausible';
 
 export const metadata = {
   title: 'Buld template',
@@ -14,18 +14,16 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <head>
+        <PlausibleProvider domain="" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
       </head>
-      <body>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <Mui.CssBaseline />
-            {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+      <body style={{ margin: 0 }}>
+        <ThemeProvider theme={theme}>
+          <Mui.ScopedCssBaseline>{children}</Mui.ScopedCssBaseline>
+        </ThemeProvider>
       </body>
     </html>
   );
