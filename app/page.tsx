@@ -1,6 +1,5 @@
 import * as Mui from '@mui/material';
 import Image from 'next/image';
-import NextLink from 'next/link';
 
 export const metadata = {};
 

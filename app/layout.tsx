@@ -1,9 +1,9 @@
 import * as Mui from '@mui/material';
 import Image from 'next/image';
-import NextLink from 'next/link';
 import theme from './theme';
-import { ThemeProvider } from '@mui/material/styles';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import PlausibleProvider from 'next-plausible';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata = {
   title: 'Buld template',
@@ -15,10 +15,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <head>
         <PlausibleProvider domain="" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        />
       </head>
       <body style={{ margin: 0 }}>
         <ThemeProvider theme={theme}>
